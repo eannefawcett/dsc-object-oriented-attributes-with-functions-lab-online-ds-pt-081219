@@ -7,3 +7,7 @@ class School:
             self.roster[grade].append(name)
         else:
             self.roster[grade] = [name]
+    def grade(self, grade):
+        return self.roster[grade]
+    def sort_roster(self):
+        return sorted(self.roster[x] for x in self.roster)
